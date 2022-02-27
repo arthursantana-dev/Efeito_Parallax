@@ -1,66 +1,61 @@
 /* ===] Configurações Iniciais [=== */
 /* -------------------------------- */
 
+:root {
+	--cor-conteudo: rgb(41, 41, 41);
+	--cor-titulo: black;
+}
+
 body {
     margin: 0px;
     font: 16px "Lato", sans-serif;
-    color: #777;
+    color: var(--cor-conteudo);
     height: 100%;
 }
 
 .conteudo {
     background-color: #fff;
-    padding: 50px 80px;
-    color: #777;
+    padding: 0.8rem 1.5rem 2rem 1.5rem;
     text-align: justify;
-    height: 300px;
+	font-size: 1.15rem;
+	font-weight: 500;
+    height: fit-content;
+
+	-webkit-box-shadow: 1px 16px 40px 7px rgba(0,0,0,0.26); 
+	box-shadow: 1px 16px 40px 7px rgba(0,0,0,0.26);
 }
 
 h3 {
     text-transform: uppercase;
-    color: #111;
+    color: var(--cor-titulo);
     text-align: center;
+	font-size: 2rem;
 }
 
 /* ===] Efeito Parallax [===*/
-/* ------------------------ */
+/* ------------------------ */ 
 
-.caixa1, .caixa2, .caixa3, .caixa4 {
-    height: 42pc;
-} 
-
-.caixa1 {
-    background-image: url(../image/Imagem1.jpg);
-    background-repeat: no-repeat;
+.caixa {
+	height: 42pc;
+	background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     opacity: 0.7;
+}
+
+.caixa1 {
+    background-image: url(../image/Imagem1.jpg);
 }
 
 .caixa2 {
     background-image: url(../image/Imagem2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    opacity: 0.7;
 }
 
 .caixa3 {
     background-image: url(../image/Imagem3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    opacity: 0.7;
 }
 
 .caixa4 {
     background-image: url(../image/Imagem4.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    opacity: 0.7;
 }
