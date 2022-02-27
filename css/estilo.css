@@ -32,6 +32,15 @@ h3 {
 	font-size: 2rem;
 }
 
+/* ===] Flex [=== */
+/* -------------- */
+
+.flex {
+	display: flex;
+	gap: 1.25rem;
+}
+
+
 /* ===] Efeito Parallax [===*/
 /* ------------------------ */ 
 
@@ -58,4 +67,8 @@ h3 {
 
 .caixa4 {
     background-image: url(../image/Imagem4.jpg);
+}
+
+.caixa5 {
+	background-image: url(../image/imagem5.jpg);
 }
